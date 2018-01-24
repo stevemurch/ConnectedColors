@@ -12,6 +12,8 @@
 		AA85D2B02018F9AA0097442E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA85D2AE2018F9AA0097442E /* Main.storyboard */; };
 		AA85D2B22018F9AA0097442E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA85D2B12018F9AA0097442E /* Assets.xcassets */; };
 		AA85D2B52018F9AA0097442E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA85D2B32018F9AA0097442E /* LaunchScreen.storyboard */; };
+		AA85D2BD2018F9F10097442E /* ColorSwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA85D2BC2018F9F10097442E /* ColorSwitchViewController.swift */; };
+		AA85D2BF2018FDE90097442E /* ColorServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA85D2BE2018FDE90097442E /* ColorServiceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		AA85D2B12018F9AA0097442E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA85D2B42018F9AA0097442E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA85D2B62018F9AA0097442E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA85D2BC2018F9F10097442E /* ColorSwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSwitchViewController.swift; sourceTree = "<group>"; };
+		AA85D2BE2018FDE90097442E /* ColorServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorServiceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				AA85D2B12018F9AA0097442E /* Assets.xcassets */,
 				AA85D2B32018F9AA0097442E /* LaunchScreen.storyboard */,
 				AA85D2B62018F9AA0097442E /* Info.plist */,
+				AA85D2BC2018F9F10097442E /* ColorSwitchViewController.swift */,
+				AA85D2BE2018FDE90097442E /* ColorServiceManager.swift */,
 			);
 			path = ConnectedColors;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			files = (
 				AA85D2AD2018F9AA0097442E /* ViewController.swift in Sources */,
 				AA85D2AB2018F9AA0097442E /* AppDelegate.swift in Sources */,
+				AA85D2BD2018F9F10097442E /* ColorSwitchViewController.swift in Sources */,
+				AA85D2BF2018FDE90097442E /* ColorServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
