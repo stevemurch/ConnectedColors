@@ -14,6 +14,9 @@
 		AA85D2B52018F9AA0097442E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA85D2B32018F9AA0097442E /* LaunchScreen.storyboard */; };
 		AA85D2BD2018F9F10097442E /* ColorSwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA85D2BC2018F9F10097442E /* ColorSwitchViewController.swift */; };
 		AA85D2BF2018FDE90097442E /* ColorServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA85D2BE2018FDE90097442E /* ColorServiceManager.swift */; };
+		AA85D2C1201907160097442E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = AA85D2C0201907160097442E /* GameScene.sks */; };
+		AA85D2C5201907DB0097442E /* GameSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA85D2C4201907DB0097442E /* GameSceneView.swift */; };
+		AA85D2C7201913600097442E /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = AA85D2C6201913600097442E /* dog.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		AA85D2B62018F9AA0097442E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA85D2BC2018F9F10097442E /* ColorSwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSwitchViewController.swift; sourceTree = "<group>"; };
 		AA85D2BE2018FDE90097442E /* ColorServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorServiceManager.swift; sourceTree = "<group>"; };
+		AA85D2C0201907160097442E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		AA85D2C4201907DB0097442E /* GameSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSceneView.swift; sourceTree = "<group>"; };
+		AA85D2C6201913600097442E /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +66,15 @@
 			children = (
 				AA85D2AA2018F9AA0097442E /* AppDelegate.swift */,
 				AA85D2AC2018F9AA0097442E /* ViewController.swift */,
+				AA85D2C6201913600097442E /* dog.png */,
 				AA85D2AE2018F9AA0097442E /* Main.storyboard */,
 				AA85D2B12018F9AA0097442E /* Assets.xcassets */,
 				AA85D2B32018F9AA0097442E /* LaunchScreen.storyboard */,
 				AA85D2B62018F9AA0097442E /* Info.plist */,
 				AA85D2BC2018F9F10097442E /* ColorSwitchViewController.swift */,
 				AA85D2BE2018FDE90097442E /* ColorServiceManager.swift */,
+				AA85D2C0201907160097442E /* GameScene.sks */,
+				AA85D2C4201907DB0097442E /* GameSceneView.swift */,
 			);
 			path = ConnectedColors;
 			sourceTree = "<group>";
@@ -129,8 +138,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA85D2C1201907160097442E /* GameScene.sks in Resources */,
 				AA85D2B52018F9AA0097442E /* LaunchScreen.storyboard in Resources */,
 				AA85D2B22018F9AA0097442E /* Assets.xcassets in Resources */,
+				AA85D2C7201913600097442E /* dog.png in Resources */,
 				AA85D2B02018F9AA0097442E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA85D2C5201907DB0097442E /* GameSceneView.swift in Sources */,
 				AA85D2AD2018F9AA0097442E /* ViewController.swift in Sources */,
 				AA85D2AB2018F9AA0097442E /* AppDelegate.swift in Sources */,
 				AA85D2BD2018F9F10097442E /* ColorSwitchViewController.swift in Sources */,
