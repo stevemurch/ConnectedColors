@@ -10,7 +10,7 @@ import SpriteKit
 
 class GameSceneView: SKView {
 
-    
+    let colorService = ColorServiceManager()
     
     func addDog(position: CGPoint)
     {
@@ -26,6 +26,8 @@ class GameSceneView: SKView {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         if let touch = touches.first {
+            
+            colorService.sendDogDrop()
             
             addDog(position: CGPoint(x:0, y:300)   )
             

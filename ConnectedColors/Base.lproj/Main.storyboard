@@ -76,6 +76,7 @@
                     </view>
                     <connections>
                         <outlet property="connectionsLabel" destination="WOv-HS-ZYu" id="9fK-uG-EfV"/>
+                        <outlet property="theGameSceneView" destination="H32-2U-SNY" id="6NQ-9z-z3T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L7A-OX-7Sf" userLabel="First Responder" sceneMemberID="firstResponder"/>

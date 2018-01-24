@@ -13,6 +13,7 @@ class ColorSwitchViewController: UIViewController {
     let colorService = ColorServiceManager()
     
     
+    @IBOutlet weak var theGameSceneView: GameSceneView!
     
     
     @IBOutlet weak var connectionsLabel: UILabel!
@@ -71,11 +72,25 @@ extension ColorSwitchViewController : ColorServiceManagerDelegate {
             switch colorString {
             case "red":
                 self.change(color: .red)
+                
+                
             case "yellow":
                 self.change(color: .yellow)
+                
+                
             default:
                 NSLog("%@", "Unknown color value received: \(colorString)")
             }
+        }
+    }
+    
+    func dogDropped(manager: ColorServiceManager)
+    {
+    
+    OperationQueue.main.addOperation {
+      
+        
+        self.theGameSceneView!.addDog(position: CGPoint(x:0, y:300)   )
         }
     }
     

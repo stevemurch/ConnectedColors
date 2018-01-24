@@ -53,6 +53,8 @@ class ColorServiceManager : NSObject {
         if session.connectedPeers.count > 0 {
             do {
                 try self.session.send(colorName.data(using: .utf8)!, toPeers: session.connectedPeers, with: .reliable)
+                
+                
             }
             catch let error {
                 NSLog("%@", "Error for sending: \(error)")
@@ -60,6 +62,24 @@ class ColorServiceManager : NSObject {
         }
         
     }
+    
+    
+    func sendDogDrop() {
+        NSLog("%@", "sendDogDrop to \(session.connectedPeers.count) peers")
+        
+        if session.connectedPeers.count > 0 {
+            do {
+                let actionName = "dogDrop"
+                try self.session.send(actionName.data(using: .utf8)!, toPeers: session.connectedPeers, with: .reliable)
+                
+            }
+            catch let error {
+                NSLog("%@", "Error for sending: \(error)")
+            }
+        }
+        
+    }
+    
 }
 
 extension ColorServiceManager : MCSessionDelegate {
@@ -75,7 +95,18 @@ extension ColorServiceManager : MCSessionDelegate {
         NSLog("%@", "didReceiveData: \(data)")
         
         let str = String(data: data, encoding: .utf8)!
+        
+        if (str=="dogDrop")
+        {
+        
+            self.delegate?.dogDropped(manager: self)
+            print("dogDrop!!!!")
+            
+        } else
+        {
+        
         self.delegate?.colorChanged(manager: self, colorString: str)
+        }
         
     }
     
@@ -135,6 +166,9 @@ protocol ColorServiceManagerDelegate {
     
     func connectedDevicesChanged(manager : ColorServiceManager, connectedDevices: [String])
     func colorChanged(manager : ColorServiceManager, colorString: String)
+    
+    func dogDropped(manager: ColorServiceManager)
+    
     
 }
 
